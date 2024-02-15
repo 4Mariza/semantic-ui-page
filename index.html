@@ -4,33 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <title>Ferrero Rocher</title>
 </head>
-<body>
-    <div class="ui  stackable grid">
-        <div class="five wide column"><img class="ui small image" src="https://assets.stickpng.com/images/589eefcd64b351149f22a891.png"></div>
-        <div class="six wide yellow column">
-            <img class="ui small centered image" src="https://seeklogo.com/images/F/ferrero_rocher-logo-4862B81FDB-seeklogo.com.png">
-            <div class="ui container center aligned">
-                    <p>Ferrero Rocher oferece uma experiência de sabor incomparável de contraste de camadas: uma avelã inteira no meio, um delicioso recheio cremoso de avelã, um wafer crocante coberto com chocolate e pedacinhos de avelã.</p>
-                    <button class="ui brown button">
-                        Saiba Mais
-                      </button>
-                  </div>
-            </div>
-        <div class="five wide column">
-            <img class="ui small image" src="https://assets.stickpng.com/images/589eefcd64b351149f22a891.png">
+<!--  -->
+<body style= "background-color: #2E1012;">
+    <!--  -->
+    <div style="background-image:url(./background.svg); background-repeat: no-repeat;background-position: center;background-size: 90%;" class="ui stackable grid" >
+        <div class="ui center aligned computer only five wide column" style="display: flex;justify-content: center;">
+            <img src="./ferrero1.svg" alt="" style="height: 25%; place-self: center;">
         </div>
+        <div style="display: flex; flex-direction: column; justify-content: space-evenly;" class=" five wide centered yellow column">
+            <img class="ui medium centered image" src="https://seeklogo.com/images/F/ferrero_rocher-logo-4862B81FDB-seeklogo.com.png">
+            <div class="ui container center aligned">
+                    <p style="color: black; font-family:Indie Flower, cursive;font-weight: 400;font-size: xx-large; ">Ferrero Rocher oferece uma experiência de sabor incomparável de contraste de camadas: uma avelã inteira no meio, um delicioso recheio cremoso de avelã, um wafer crocante coberto com chocolate e pedacinhos de avelã.</p>
+            </div>
+            <button style= "width: 45%; place-self: center; background-color: #2E1012;font-family:Indie Flower, cursive;font-weight: 400;font-size: x-large; border-radius: 0;" class="ui massive brown button">
+                 Saiba Mais
+            </button>
+        </div>
+        <div class="ui computer only five wide column" style="display: flex;justify-content: center;"><img src="./ferrero2.svg" alt="" style="height: 30%; place-self: center;"></div>
     </div> 
-    
 </body>
 </html>
 <style>
-
     *{
         padding: 0;
         margin: 0;
@@ -38,29 +37,25 @@
     }
 
     html,body{
-        height: 100%;
+        height: 100vh;
     }
-    body{
-        background-color:#2E1012 ;
-    }
-
-    .ui.grid{
-        height: 100%;
+    .grid{
+        height: 101.5%;
     }
 
-    .ui.container{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        place-items: center;
-    }
-    .ui.container p{
-        font-family: "Indie Flower", cursive;
-        font-weight: 400;
-        font-style: normal;
-        font-size: x-large;
-        color: black;
-        width: 50%;
-    }
-    
+    @media(max-width:620px){
+        .column{
+            background-image: url(./image\ 1.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+        /* não funciona nem com classe, id */
+         p{
+            font-size: x-large;
+        }
+        button{
+            width: 55%;
+        }
+   }
 </style>
