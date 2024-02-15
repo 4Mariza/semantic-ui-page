@@ -16,9 +16,12 @@ body{
     overflow: hidden;
 }
 
+.ui.stackable.grid .six.wide.column.meio {
+    width: 100vh;
+}
 #coluna-do-meio{
-    height: 105vh;
-    padding: 20px;
+    height: 100vh;
+    padding: 32px 24px;
     background-color: #F3CC4D;
 }
 #coluna-esquerda{
@@ -44,7 +47,7 @@ body{
     font-style: normal;
     font-size: x-large;
     color: black;
-    width: 70%;
+    width: 100%;
 }
 
 /* só da pra mudar o botão do semantic especificando com o id */
@@ -52,19 +55,13 @@ body{
     font-weight: 200;
     font-family: "Indie Flower", cursive;
     background-color:#2E1012 ;
+    border-radius: 0;
+}
+
+#logo{
+    padding: 32px;
 }
 
 @media (max-width: 800px){
-    #coluna-esquerda{
-        display: none;
-    }
-    #coluna-direita{
-        display: none;
-    }
 
-    .ui.container{
-
-        height: 80%;
-        gap: 20%;
-    }
 }
