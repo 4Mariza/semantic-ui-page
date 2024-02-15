@@ -16,11 +16,18 @@ body{
     overflow: hidden;
 }
 
-.ui.stackable.grid{
-    height: 100%;
+#coluna-do-meio{
+    height: 105vh;
+    padding: 20px;
+    background-color: #F3CC4D;
 }
-.column{
-    height: 100vh;
+#coluna-esquerda{
+    display: grid;
+    place-content: center;
+}
+#coluna-direita{
+    display: grid;
+    place-content: center;
 }
 
 .ui.container{
@@ -46,6 +53,18 @@ body{
     font-family: "Indie Flower", cursive;
     background-color:#2E1012 ;
 }
-.ui.three.row.grid{
-    height: 100%;
+
+@media (max-width: 800px){
+    #coluna-esquerda{
+        display: none;
+    }
+    #coluna-direita{
+        display: none;
+    }
+
+    .ui.container{
+
+        height: 80%;
+        gap: 20%;
+    }
 }

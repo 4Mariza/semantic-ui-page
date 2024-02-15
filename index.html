@@ -17,9 +17,13 @@
     <div class="ui stackable grid">
         <!-- criar 3 divs com a classe 'column' e a quantidade de espaços que cada uma irá
         ocupar com  'numero + wide'. Os espaços para colunas são de 1 até 16 -->
-        <div class="five wide column"><img class="ui small centered image" src="./img/ferrero1.png"></div>
-        <div class="six wide yellow column"> <!-- a coluna do meio ocupa 6 espaços e é amarela (classe 'yellow') -->
-            <img class="ui small centered image" src="./img/logo.png">
+
+        <div class="five wide column" id="coluna-esquerda">
+            <img class="ui small centered image" src="./img/ferrero1.png">
+        </div>
+    <!-- a coluna do meio ocupa 6 espaços e (antes de mudar no css -> é amarela (classe 'yellow')) (depois de mudar vai ficar o amarelo certo) -->
+        <div class="six wide column" id="coluna-do-meio">
+            <img class="ui small computer medium phone centered image" src="./img/logo.png">
            <!-- criar div com a classe container, que alinha os conteúdos no centro -->
             <div class="ui container center aligned">
                     <p>Ferrero Rocher oferece uma experiência de sabor incomparável de contraste de camadas: uma avelã inteira no meio, um delicioso recheio cremoso de avelã, um wafer crocante coberto com chocolate e pedacinhos de avelã.</p>
@@ -29,7 +33,7 @@
                       </button>
                   </div>
             </div>
-        <div class="five wide column">
+        <div class="five wide column" id="coluna-direita">
             <!-- imagem com classe para definir o tamanho -->
             <img class="ui medium centered middle aligned image" src="./img/ferrero2.png">
         </div>
