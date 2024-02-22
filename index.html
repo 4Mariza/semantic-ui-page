@@ -11,21 +11,29 @@
 </head>
 <!--  -->
 <body style= "background-color: #2E1012;">
-    <!--  -->
-    <div style="background-image:url(./background.svg); background-repeat: no-repeat;background-position: center;background-size: 90%;" class="ui stackable grid" >
+    <!-- Container grid responsivo -->
+    <div class="ui stackable grid" style="background-image:url(./background.svg); background-repeat: no-repeat;background-position: center;background-size: 90%;">
+        <!-- Primeira coluna: centraliza o conteúdo e aparece somente no computador, tem 5 unidades de largura -->
         <div class="ui center aligned computer only five wide column" style="display: flex;justify-content: center;">
             <img src="./ferrero1.svg" alt="" style="height: 25%; place-self: center;">
         </div>
-        <div style="display: flex; flex-direction: column; justify-content: space-evenly;" class=" five wide centered yellow column">
-            <img class="ui medium centered image" src="https://seeklogo.com/images/F/ferrero_rocher-logo-4862B81FDB-seeklogo.com.png">
-            <div class="ui container center aligned" style="font-size: x-large;">
-                    <h3 style="color: black; font-family:Indie Flower, cursive;font-weight: 400;; " class="ui large computer medium phone header">Ferrero Rocher oferece uma experiência de sabor incomparável de contraste de camadas: uma avelã inteira no meio, um delicioso recheio cremoso de avelã, um wafer crocante coberto com chocolate e pedacinhos de avelã.</h3>
+        <!-- Coluna do meio: centraliza o conteúdo tem 5 unidades de largura e a cor amarela-->
+        <div class=" five wide centered yellow column" style="display: flex; flex-direction: column; justify-content: space-evenly; background-color: #F3CC4D;">
+            <!-- Logo: classe de imagem centralizada (as classe de tamanho não possuía o tamanho necessário)-->
+            <img class="ui centered image" style="height: 12%" src="https://seeklogo.com/images/F/ferrero_rocher-logo-4862B81FDB-seeklogo.com.png">
+            <!-- container que centraliza os conteúdos -->
+            <div class="ui container center aligned">
+                    <p style="color: black; font-family:Indie Flower, cursive;font-weight: 400;font-size: 2rem;">Ferrero Rocher oferece uma 
+                        experiência de sabor incomparável de contraste de camadas: uma avelã inteira no meio, um delicioso recheio cremoso de 
+                        avelã, um wafer crocante coberto com chocolate e pedacinhos de avelã.</p>
             </div>
-            <button style= "width: 45%; place-self: center; background-color: #2E1012;font-family:Indie Flower, cursive;font-weight: 400;font-size: x-large; border-radius: 0;" class="ui massive brown button">
+            <!-- Botão: ui estiliza o botão -->
+            <button class="ui massive brown button" style= "width: 60%; place-self: center; background-color: #2E1012;font-family:Indie Flower, cursive;font-weight: 400;font-size: x-large; border-radius: 0;">
                  Saiba Mais
             </button>
         </div>
-        <div class="ui computer only five wide column" style="display: flex;justify-content: center;"><img src="./ferrero2.svg" alt="" style="height: 30%; place-self: center;"></div>
+        <!-- Terceira coluna: centraliza o conteúdo e aparece somente no computador, tem 5 unidades de largura -->
+        <div class="ui center aligned computer only five wide column" style="display: flex;justify-content: center;"><img src="./ferrero2.svg" alt="" style="height: 30%; place-self: center;"></div>
     </div> 
 </body>
 </html>
